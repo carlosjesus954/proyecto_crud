@@ -1,0 +1,14 @@
+{
+  "name": "tienda",
+  "version": "1.0.0",
+  "description": "sass",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src:app/css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.56.1"
+  }
+}
