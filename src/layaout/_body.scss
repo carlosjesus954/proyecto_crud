@@ -1,6 +1,59 @@
 @use "../base/variables" as v;
 @use "../base/mixins" as m;
 
-body{
-    background-color: aqua;
+.header {
+  margin-bottom: 2rem;
+  &__nav {
+    background-color: black;
+    padding: 1rem;
+    text-align: center;
+  }
+  &__link {
+    text-decoration: none;
+    color: white;
+
+    width: 100%;
+  }
+}
+.main {
+  padding: 1rem;
+  &__section {
+  }
+  &__container {
+    text-align: center;
+  }
+  &__form {
+    max-width: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__control {
+  }
+  &__input {
+    border-style: none;
+    background-color: v.$colorPrincipal;
+    color: white;
+    width: 100%;
+
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  &__textarea {
+    border-style: none;
+    background-color: v.$colorPrincipal;
+    color: white;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  &__submit {
+    font-weight: bolder;
+    width: 100%;
+    background-color: greenyellow;
+    color: rgb(0, 0, 0);
+    padding: 1rem;
+    border: solid 1px black;
+    cursor: pointer;
+  }
 }

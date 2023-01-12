@@ -1,5 +1,52 @@
-body {
-  background-color: aqua;
+.header {
+  margin-bottom: 2rem;
+}
+.header__nav {
+  background-color: black;
+  padding: 1rem;
+  text-align: center;
+}
+.header__link {
+  text-decoration: none;
+  color: white;
+  width: 100%;
+}
+
+.main {
+  padding: 1rem;
+}
+.main__container {
+  text-align: center;
+}
+.main__form {
+  max-width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main__input {
+  border-style: none;
+  background-color: #333;
+  color: white;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.main__textarea {
+  border-style: none;
+  background-color: #333;
+  color: white;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.main__submit {
+  font-weight: bolder;
+  width: 100%;
+  background-color: greenyellow;
+  color: rgb(0, 0, 0);
+  padding: 1rem;
+  border: solid 1px black;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=index.css.map */
