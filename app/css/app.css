@@ -168,13 +168,6 @@ select { /* 1 */
 /**
  * Correct the inability to style clickable types in iOS and Safari.
  */
-button,
-[type=button],
-[type=reset],
-[type=submit] {
-  -webkit-appearance: button;
-}
-
 /**
  * Remove the inner border and padding in Firefox.
  */
@@ -254,11 +247,6 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type=search] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
-}
-
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
@@ -342,11 +330,35 @@ a {
 .main {
   padding: 1rem;
 }
+.main__section {
+  max-width: 45rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main__alert {
+  text-align: center;
+  background-color: rgb(0, 167, 0);
+  margin-bottom: 2rem;
+  padding: 1rem;
+  position: relative;
+}
+.main__span {
+  font-weight: bold;
+  color: rgb(17, 17, 17);
+}
+.main__close {
+  width: 1.5625rem;
+  height: 1.5625rem;
+  position: absolute;
+  top: 10%;
+  left: 93%;
+  cursor: pointer;
+}
 .main__container {
   text-align: center;
 }
 .main__form {
-  max-width: 20rem;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -374,6 +386,39 @@ a {
   padding: 1rem;
   border: solid 1px black;
   cursor: pointer;
+  margin-bottom: 2rem;
+}
+.main__table {
+  border: solid 0.125rem black;
+  width: 100%;
+  padding: 1rem;
+}
+.main__td {
+  text-align: center;
+}
+.main__actions {
+  fill: rgb(255, 255, 255);
+}
+.main__edit {
+  background-color: grey;
+  padding: 0.2rem;
+  width: 1.5625rem;
+  height: 1.5625rem;
+}
+.main__delete {
+  background-color: rgb(255, 0, 0);
+  padding: 0.2rem;
+  width: 1.5625rem;
+  height: 1.5625rem;
+}
+.main__btn {
+  background-color: rgb(97, 161, 0);
+  padding: 1rem;
+  color: white;
+}
+
+.remove {
+  display: none;
 }
 
 /*# sourceMappingURL=app.css.map */

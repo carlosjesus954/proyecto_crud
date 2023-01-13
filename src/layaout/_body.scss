@@ -17,13 +17,36 @@
 }
 .main {
   padding: 1rem;
+  
   &__section {
+    max-width: 45rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__alert{
+    text-align: center;
+    background-color: rgb(0, 167, 0);
+    margin-bottom: 2rem;
+    padding: 1rem;
+    position: relative;
+  }
+  &__span{
+    font-weight: bold;
+    color: v.$colorLetra;
+  }
+  &__close{
+    width: 1.5625rem;
+    height: 1.5625rem;
+    position: absolute;
+    top: 10%;
+    left: 93%;
+    cursor: pointer;
   }
   &__container {
     text-align: center;
   }
   &__form {
-    max-width: 20rem;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -55,5 +78,41 @@
     padding: 1rem;
     border: solid 1px black;
     cursor: pointer;
+    margin-bottom: 2rem;
   }
+  &__consultas{
+
+  }
+  &__table{
+    border: solid .125rem black;
+    width: 100%;
+    padding: 1rem;
+  }
+  &__td{
+    text-align: center;
+  }
+  &__actions{
+    fill: rgb(255, 255, 255);
+  }
+  &__edit{
+    background-color: grey;
+    padding: 0.2rem;
+    width: 1.5625rem;
+    height: 1.5625rem;
+  }
+  &__delete{
+    background-color: rgb(255, 0, 0);
+    padding: 0.2rem;
+    width: 1.5625rem;
+    height: 1.5625rem;
+  }
+  &__btn{
+    background-color: rgb(97, 161, 0);
+    padding: 1rem;
+    color: white;
+  }
+}
+
+.remove{
+  display: none;
 }
